@@ -1,4 +1,4 @@
-# eqmn-io-chrome - EQMN modeler based on bpmn-io-chrome
+## EQMN modeling tool
 
 [eqmn-io-chrome](https://github.com/kerstinguenther/eqmn-io-chrome) is an EQMN modeling tool as Google Chrome App based on [bpmn-io-chrome](https://github.com/bpmn-io/bpmn-io-chrome).
 
@@ -24,7 +24,7 @@ Open Google Chrome Browser (or Chromium) and go to Settings > Extensions. Enable
 
 #### Create executable
 
-Once loaded as Google Chrome App, you can lookup the extension's id in the Chrome browser under Settings > Extensions and you can use this <id> to build an executable for the app.
+Once loaded as Google Chrome App, you can lookup the extension's id in the Chrome browser under Settings > Extensions and you can use this id to build an executable for launching the app.
 
 ###### Windows
 
@@ -36,9 +36,9 @@ chrome --disable-web-security --app-id=<id>
 
 __Hint:__ If Chrome is not in your PATH, you have to type the complete path to Google Chrome, like "C:\Program Files\Google\Chrome\Application\chrome.exe".
 
-Now just double-click bat-file to open app.
+Now just double-click .bat file to open the app.
 
-#### Linux / Mac OS X
+###### Linux / Mac OS X
 
 Create an `eqmn-io` executable, i.e. under `/usr/local/bin`:
 
