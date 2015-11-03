@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'eqmnFont';
+	src: url('../font/eqmn.ttf');
+}
+
+.icon-operator-list:before { content: '\e900'; font-family: 'eqmnFont';}
+.icon-operator-conjunction:before { content: '\e600'; font-family: 'eqmnFont';}
+.icon-operator-disjunction:before { content: '\e607'; font-family: 'eqmnFont';}
+.icon-operator-negation:before { content: '\e606'; font-family: 'eqmnFont';}
+.icon-sequence-loose:before { content: '\e603'; font-family: 'eqmnFont';}
+.icon-sequence-strict:before { content: '\e604'; font-family: 'eqmnFont';}
+.icon-condition:before { content: '\e605'; font-family: 'eqmnFont';}
+.icon-event-input:before { content: '\e601'; font-family: 'eqmnFont';}
+.icon-event-output:before { content: '\e602'; font-family: 'eqmnFont';}
+
+.icon-interval {
+  background: url('../icons/icon_interval.png') center center;
+}
+.icon-window {
+	background: url('../icons/icon_window.png') center center;
+}
+.icon-window-time {
+  background: url('../icons/icon_window_time.png') center center;
+}
+.icon-window-length {
+  background: url('../icons/icon_window_length.png') center center;
+}
+.icon-window-time-sliding {
+  background: url('../icons/icon_window_time_sliding.png') center center;
+}
+.icon-window-length-sliding {
+  background: url('../icons/icon_window_length_sliding.png') center center;
+}
+.icon-window-time-batch {
+  background: url('../icons/icon_window_time_batch.png') center center;
+}
+.icon-window-length-batch {
+  background: url('../icons/icon_window_length_batch.png') center center;
+}

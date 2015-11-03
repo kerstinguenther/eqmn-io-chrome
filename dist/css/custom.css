@@ -1,0 +1,99 @@
+.incorrect-label {
+	fill: red;
+}
+
+.selectable{
+ -moz-user-select: text;
+ -khtml-user-select: text;
+ -webkit-user-select: text;
+ -ms-user-select: text;
+ user-select: text;
+}
+
+.scrollable {
+	height: calc(100% - 50px);
+  overflow-y: scroll;
+}
+
+.monospace {
+	font-family: Courier New;
+}
+
+.bio-diagram .tab[data-tab="eventTypes"] {
+  order: 3;
+}
+
+.show-eventTypes .tab[data-tab="eventTypes"] {
+  flex-grow: 0.5;
+}
+
+.tabbar a[show-tab="eventTypes"] {
+  margin-bottom: -1px !important;
+}
+
+.show-eventTypes .tabbar a[show-tab="eventTypes"] {
+  border-bottom-color: #ffffff;
+}
+
+.bio-diagram .tabbar-bottom li.active-eventTypes a {
+  background: white;
+  margin-top: 5px;
+  margin-bottom: -1px;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  padding: 6px 10px;
+}
+
+/****************************************************************/
+
+.bio-diagram .tab[data-tab="esper"] {
+  order: 3;
+}
+
+.show-esper .tab[data-tab="esper"] {
+  flex-grow: 0.5;
+}
+
+.tabbar a[show-tab="esper"] {
+  margin-bottom: -1px !important;
+}
+
+.show-esper .tabbar a[show-tab="esper"] {
+  border-bottom-color: #ffffff;
+}
+
+.bio-diagram .tabbar-bottom li.active-esper a {
+  background: white;
+  margin-top: 5px;
+  margin-bottom: -1px;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  padding: 6px 10px;
+}
+
+/****************************************************************/
+
+.bio-diagram .tab[data-tab="drools"] {
+  order: 3;
+}
+
+.show-drools .tab[data-tab="drools"] {
+  flex-grow: 0.5;
+}
+
+.tabbar a[show-tab="drools"] {
+  margin-bottom: -1px !important;
+}
+
+.show-drools .tabbar a[show-tab="drools"] {
+  border-bottom-color: #ffffff;
+}
+
+.bio-diagram .tabbar-bottom li.active-drools a {
+  background: white;
+  margin-top: 5px;
+  margin-bottom: -1px;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  padding: 6px 10px;
+}

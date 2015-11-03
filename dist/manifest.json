@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "eqmn.io - Extension of bpmn.io for Event Query Model and Notation (EQMN)",
+  "version": "0.10.2",
+  "description": "A modeler for EQMN based on bpmn.io",
+  "author": "Kerstin Günther inspired by bpmn.io",
+  "offline_enabled": true,
+  "minimum_chrome_version": "30",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": [ "main.js"]
+    }
+  },
+  "permissions": [
+    {
+      "fileSystem": [
+        "write", "retainEntries", "directory"
+      ]
+    },
+    "storage"
+  ],
+  "file_handlers" : {
+    "any" : {
+      "extensions" : [ "*", "eqmn" ]
+    }
+  }
+}
