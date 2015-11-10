@@ -67,7 +67,7 @@ You can find more information about the tool by clicking on the question mark in
 					</div>
 
 					<div data-tab="eventTypes" class="tab">
-						<div>
+						<div class="custom-tab">
 							<p>
 								<!--button ng-click="editor.loadEventTypesViaXsd()">Load
 									event types via XSD</button-->
@@ -91,13 +91,13 @@ You can find more information about the tool by clicking on the question mark in
 					</div>
 
 					<div data-tab="esper" class="tab">
-					 <div>
+					 <div class="custom-tab">
 					 <p>
 					  <button ng-click="editor.updateEsperQuery()">
 					    Update Query
 					  </button>
 					  </p>
-					  <p>
+					  <div class="scrollable">
 						<!--textarea readonly
 							ng-model-options="{updateOn: 'default', debounce: {'default': 1000 }}"
 							ng-model="model" spellcheck="false"></textarea-->
@@ -105,18 +105,18 @@ You can find more information about the tool by clicking on the question mark in
 						    <div class="selectable monospace" ng-repeat="(key, value) in esperQuery track by $index">
                   {{ value }}
                 </div>
-					   </p>
+					   </div>
 						</div>
 					</div>
 					
 					<div data-tab="drools" class="tab">
-           <div>
+           <div class="custom-tab">
            <p>
             <button ng-click="editor.updateDroolsQuery()">
               Update Query
             </button>
             </p>
-            <p>
+            <div class="scrollable">
             <!--textarea readonly
               ng-model-options="{updateOn: 'default', debounce: {'default': 1000 }}"
               ng-model="model" spellcheck="false"></textarea-->
@@ -124,7 +124,7 @@ You can find more information about the tool by clicking on the question mark in
                 <div class="selectable monospace" ng-repeat="(key, value) in droolsQuery track by $index">
                   {{ value }}
                 </div>
-             </p>
+             </div>
             </div>
           </div>
 

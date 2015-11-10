@@ -124,7 +124,10 @@ function isUnprocessed(element, processed) {
 
 function getRootElement(elements, processed) {
 	// only one element? (= no array) --> root element
-	if(!elements.length) return elements;
+	var eqmn = getEqmnElements(elements);
+	if(eqmn.length == 1) {
+		return eqmn[0];
+	}
 	
 	// look for element that has NO outgoing connection and is no text annotation
 	var element;
@@ -134,6 +137,22 @@ function getRootElement(elements, processed) {
 			return element;
 		}
 	}
+}
+
+/**
+ * gets all EQMN elements (no text annotations)
+ * @param elements
+ */
+function getEqmnElements(elements) {
+	var eqmn = [];
+	var type
+	for(var i=0; i<elements.length; i++) {
+		type = (elements[i].type) ? elements[i].type : elements[i].$type;
+		if(elements[i].type != "bpmn:TextAnnotation") {
+			eqmn.push(elements[i]);
+		}
+	}
+	return eqmn;
 }
 
 function getStartElement(element) {

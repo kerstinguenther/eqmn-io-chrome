@@ -326,10 +326,12 @@ body:hover {
 		output events or the complete input of the query by adding a condition
 		to the sequence flow connecting an element to the output event.
 	</p>
+	<p><br />A condition for the output event must have the following pattern: 'EventType.attribute as attribute'.</p>
+<p>A condition for an input event must have the following pattern: 'attribute operator value'. The operator can be '=', '!=', '>' or '<' and the value can be the attribute of another event type (like EventType.attribute), a numeric value or a string.</p>
+<p>A condition for the overall input must have the following pattern: 'EventType.attribute operator value'.</p>
+<p>Multiple condition statements can be connected with a comma (,).</p>
 	<br />
-	</p>
 	<br />
-
 	<h3>Connections</h3>
 	<p>
 		<img
