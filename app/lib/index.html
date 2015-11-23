@@ -98,9 +98,6 @@ You can find more information about the tool by clicking on the question mark in
 					  </button>
 					  </p>
 					  <div class="scrollable">
-						<!--textarea readonly
-							ng-model-options="{updateOn: 'default', debounce: {'default': 1000 }}"
-							ng-model="model" spellcheck="false"></textarea-->
 						    <div>{{ modelError }}</div>
 						    <div class="selectable monospace" ng-repeat="(key, value) in esperQuery track by $index">
                   {{ value }}
@@ -117,9 +114,6 @@ You can find more information about the tool by clicking on the question mark in
             </button>
             </p>
             <div class="scrollable">
-            <!--textarea readonly
-              ng-model-options="{updateOn: 'default', debounce: {'default': 1000 }}"
-              ng-model="model" spellcheck="false"></textarea-->
                 <div>{{ modelError }}</div>
                 <div class="selectable monospace" ng-repeat="(key, value) in droolsQuery track by $index">
                   {{ value }}

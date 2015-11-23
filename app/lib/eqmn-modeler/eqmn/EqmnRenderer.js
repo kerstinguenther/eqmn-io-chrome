@@ -341,7 +341,7 @@ function EqmnRenderer(eventBus, styles, eqmnPathMap, elementFactory, canvas) {
 
 	this.drawInterval = function(p, width, height, attrs) {
 		return drawRect(p, width, height, {
-			strokeDasharray: '2,8'
+			strokeDasharray: '9,9'
 		});
 	};
 

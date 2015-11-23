@@ -10,18 +10,13 @@ var ngModule = module.exports = angular.module('app', [
   require('./editor').name
 ]);
 
-// custom elements JSON; load it from somewhere else if you like
-var customElements = require('./eqmn-elements.json');
-
 // our custom modeler
 var EqmnModeler = require('./eqmn-modeler');
 
 var overrideModule = {
     contextPadProvider: [ 'type', require('./eqmn-modeler/eqmn/EqmnContextPadProvider') ],
     bpmnRules: [ 'type', require('./eqmn-modeler/eqmn/EqmnRules') ],
-    bpmnReplace: [ 'type', require('./eqmn-modeler/eqmn/EqmnReplace') ],
-    //bpmnFactory: [ 'type', require('./eqmn-modeler/eqmn/EqmnElementFactory') ],
-    //modeling: [ 'type', require('./custom-modeler/custom/CustomModeling') ]
+    bpmnReplace: [ 'type', require('./eqmn-modeler/eqmn/EqmnReplace') ]
 };
 
 var modeler = new EqmnModeler({ 
